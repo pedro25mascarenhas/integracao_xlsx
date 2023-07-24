@@ -7,7 +7,7 @@ pipenv install
 
 ```
 
-Para instalar (para desenvolvimento):
+Para instalar (desenvolvimento):
 ```commandline
 pipenv install -d
 ```
