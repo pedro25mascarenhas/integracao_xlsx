@@ -3,6 +3,7 @@ import pandas as pd
 from openpyxl import load_workbook
 from scripts.path_names import path_planilha_banco_de_dados, path_planilha_principal, path_planilha_integrada
 
+
 def gerar_planilha_integrada():
     workbook = load_workbook(path_planilha_banco_de_dados)
     banco_de_dados = workbook.active
@@ -21,5 +22,7 @@ def gerar_planilha_integrada():
 
     workbook.save(path_planilha_integrada)
 
+
 if __name__ == '__main__':
     gerar_planilha_integrada()
+    print(f"A planilha integrada foi criada com sucesso em: {path_planilha_integrada}")
